@@ -8,9 +8,20 @@ import { NbThemeModule, NbLayoutModule, NbSidebarModule } from "@nebular/theme";
 import { NbEvaIconsModule } from "@nebular/eva-icons";
 import { NavbarComponent } from "./navbar/navbar.component";
 import { FooterComponent } from "./footer/footer.component";
+import { AboutComponent } from "./about/about.component";
+import { HomeComponent } from "./home/home.component";
+import { BlogModule } from "./blog/blog.module";
+import { DashboardModule } from "./dashboard/dashboard.module";
+import { ClassroomModule } from "./classroom/classroom.module";
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, FooterComponent],
+  declarations: [
+    AppComponent,
+    NavbarComponent,
+    FooterComponent,
+    AboutComponent,
+    HomeComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -19,6 +30,9 @@ import { FooterComponent } from "./footer/footer.component";
     NbLayoutModule,
     NbEvaIconsModule,
     NbSidebarModule.forRoot(),
+    BlogModule,
+    DashboardModule,
+    ClassroomModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
