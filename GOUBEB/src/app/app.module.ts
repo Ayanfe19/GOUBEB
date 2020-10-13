@@ -15,6 +15,7 @@ import { DashboardModule } from "./dashboard/dashboard.module";
 import { ClassroomModule } from "./classroom/classroom.module";
 import { LoginComponent } from "./user/login/login.component";
 import { RegisterComponent } from "./user/register/register.component";
+import { FormsModule } from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { RegisterComponent } from "./user/register/register.component";
     BlogModule,
     DashboardModule,
     ClassroomModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

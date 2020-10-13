@@ -1,0 +1,14 @@
+.split {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  background-color: skyblue;
+}
+
+.logReg {
+  width: 45%;
+}
+
+.textImg {
+  width: 55%;
+}

@@ -1,11 +1,21 @@
 <div class="split">
-  <div class="card">
+  <div class="card logReg">
     <img src="assets" alt="" />
-    <app-login></app-login>
-    <a href="#">Forgotten password</a>
-    <app-register></app-register>
+    <div *ngIf="!hidden">
+      <app-login></app-login>
+      <a href="#">Forgotten password</a>
+    </div>
+    <button (click)="onDisplay()" *ngIf="!hidden">Register</button>
+    <div *ngIf="hidden">
+      <app-register></app-register>
+    </div>
+    <div *ngIf="!hidden2">
+      <p>Have an account</p>
+      <button (click)="onDisplay2()">Log In</button>
+    </div>
+    <app-footer></app-footer>
   </div>
-  <div class="card">
+  <div class="card textImg">
     <img src="assets" alt="" />
     <p>
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, labore

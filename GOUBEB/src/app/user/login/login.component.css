@@ -1,0 +1,12 @@
+form {
+  background-color: skyblue;
+}
+
+input {
+  width: auto;
+}
+
+.form-group {
+  display: flex;
+  justify-content: center;
+}
