@@ -13,6 +13,8 @@ import { HomeComponent } from "./home/home.component";
 import { BlogModule } from "./blog/blog.module";
 import { DashboardModule } from "./dashboard/dashboard.module";
 import { ClassroomModule } from "./classroom/classroom.module";
+import { LoginComponent } from "./user/login/login.component";
+import { RegisterComponent } from "./user/register/register.component";
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { ClassroomModule } from "./classroom/classroom.module";
     FooterComponent,
     AboutComponent,
     HomeComponent,
+    LoginComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,
