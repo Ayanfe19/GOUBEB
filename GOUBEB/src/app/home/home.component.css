@@ -2,13 +2,65 @@
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
-  background-color: skyblue;
+  background: rgb(71, 175, 199);
 }
 
 .logReg {
-  width: 45%;
+  width: 42%;
+  border: none;
+  background: rgb(71, 175, 199);
+}
+
+.app-login {
+  /* border: 2px solid black; */
+  margin-top: 10%;
+}
+
+.forgot {
+  text-align: center;
+  margin-top: 10%;
+  color: rgb(77, 101, 101);
+}
+
+.logoText {
+  margin-top: 10%;
+  background: rgb(71, 175, 199);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 35px;
+  font-weight: 200;
+  font-style: oblique;
+  text-align: center;
+  color: rgb(77, 101, 101);
 }
 
 .textImg {
-  width: 55%;
+  width: 58%;
+  height: 80%;
+  border: none;
+}
+
+.sideImage {
+  position: relative;
+  height: 80%;
+}
+
+.sideText {
+  position: absolute;
+  color: rgb(77, 101, 101);
+  text-align: center;
+  margin-top: 23%;
+}
+
+hr {
+  height: 2px;
+  width: 75%;
+  color: rgb(77, 101, 101);
+  background: rgb(77, 101, 101);
+}
+
+.register-btn {
+  background: rgb(77, 101, 101);
+  border-radius: 0;
+  width: 50%;
+  margin-left: 23%;
 }

@@ -1,11 +1,20 @@
 <div class="split">
   <div class="card logReg">
-    <img src="assets" alt="" />
-    <div *ngIf="!hidden">
+    <span class="logoText">BOUBEB EDUCATION</span>
+    <!-- <img src="assets" alt="" /> -->
+    <div class="app-login" *ngIf="!hidden">
       <app-login></app-login>
-      <a href="#">Forgotten password</a>
+      <a href="#"><p class="forgot">Forgot password ?</p></a>
+      <hr />
     </div>
-    <button (click)="onDisplay()" *ngIf="!hidden">Register</button>
+
+    <button
+      class="btn btn-primary register-btn"
+      (click)="onDisplay()"
+      *ngIf="!hidden"
+    >
+      Register
+    </button>
     <div *ngIf="hidden">
       <app-register></app-register>
     </div>
@@ -13,11 +22,10 @@
       <p>Have an account</p>
       <button (click)="onDisplay2()">Log In</button>
     </div>
-    <app-footer></app-footer>
   </div>
   <div class="card textImg">
-    <img src="assets" alt="" />
-    <p>
+    <img src="/assets/334.jpg" alt="" width="100%" class="sideImage" />
+    <p class="sideText">
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, labore
       eveniet facere culpa nesciunt consectetur quisquam et iste voluptatum
       tempore debitis quae eius corporis quibusdam sit explicabo unde repellat

@@ -1,5 +1,7 @@
 form {
-  background-color: skyblue;
+  background: rgb(71, 175, 199);
+  /* border: 2px solid black; */
+  align-items: center;
 }
 
 input {
@@ -9,4 +11,21 @@ input {
 .form-group {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  width: 70%;
+  margin-left: 15%;
+  /* border: 2px solid black; */
+}
+
+input {
+  border-radius: 0%;
+  background: transparent;
+  width: 100%;
+}
+
+button {
+  background: rgb(77, 101, 101);
+  border-radius: 0;
+  width: 50%;
+  margin-left: 23%;
 }
