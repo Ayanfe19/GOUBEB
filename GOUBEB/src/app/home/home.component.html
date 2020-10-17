@@ -1,6 +1,6 @@
 <div class="split">
   <div class="card logReg">
-    <span class="logoText">BOUBEB EDUCATION</span>
+    <span class="logoText">GOUBEB EDUCATION</span>
     <!-- <img src="assets" alt="" /> -->
     <div class="app-login" *ngIf="!hidden">
       <app-login></app-login>
@@ -19,8 +19,11 @@
       <app-register></app-register>
     </div>
     <div *ngIf="!hidden2">
-      <p>Have an account</p>
-      <button (click)="onDisplay2()">Log In</button>
+      <hr />
+      <p class="forgot">Already Have an account</p>
+      <button class="btn btn-primary register-btn" (click)="onDisplay2()">
+        Log In
+      </button>
     </div>
   </div>
   <div class="card textImg">

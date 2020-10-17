@@ -3,12 +3,14 @@
   justify-content: space-evenly;
   flex-direction: row;
   background: rgb(71, 175, 199);
+  height: 100%;
 }
 
 .logReg {
   width: 42%;
   border: none;
   background: rgb(71, 175, 199);
+  height: 100px;
 }
 
 .app-login {
@@ -30,13 +32,14 @@
   font-weight: 200;
   font-style: oblique;
   text-align: center;
-  color: rgb(77, 101, 101);
+  color: white;
 }
 
 .textImg {
   width: 58%;
-  height: 80%;
+  height: 100%;
   border: none;
+  background: rgb(71, 175, 199);
 }
 
 .sideImage {
@@ -48,7 +51,7 @@
   position: absolute;
   color: rgb(77, 101, 101);
   text-align: center;
-  margin-top: 23%;
+  margin-top: 29%;
 }
 
 hr {
@@ -59,8 +62,14 @@ hr {
 }
 
 .register-btn {
-  background: rgb(77, 101, 101);
+  background: rgb(248, 179, 22);
   border-radius: 0;
   width: 50%;
   margin-left: 23%;
+  border: none;
+}
+
+.register-btn:hover {
+  background: white;
+  color: rgb(77, 101, 101);
 }

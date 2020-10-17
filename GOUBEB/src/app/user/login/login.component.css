@@ -25,7 +25,13 @@ input {
 
 button {
   background: rgb(77, 101, 101);
+  border: none;
   border-radius: 0;
   width: 50%;
   margin-left: 23%;
+}
+
+button:hover {
+  background: white;
+  color: rgb(77, 101, 101);
 }
