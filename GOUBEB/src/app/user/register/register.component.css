@@ -35,3 +35,21 @@ button:hover {
   background: white;
   color: rgb(77, 101, 101);
 }
+
+.back-submit {
+  display: flex;
+  justify-content: space-between;
+  /* border: 2px solid black; */
+  width: 70%;
+  margin-left: 15%;
+}
+
+.btn-back {
+  margin: 0;
+  width: auto;
+}
+
+.btn-submit {
+  margin: 0;
+  width: auto;
+}

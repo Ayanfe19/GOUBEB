@@ -32,7 +32,6 @@ import { FormsModule } from "@angular/forms";
     AppRoutingModule,
     BrowserAnimationsModule,
     NbThemeModule.forRoot({ name: "corporate" }),
-    NbLayoutModule,
     NbEvaIconsModule,
     NbSidebarModule.forRoot(),
     BlogModule,

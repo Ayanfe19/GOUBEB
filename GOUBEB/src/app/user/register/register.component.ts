@@ -6,9 +6,30 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./register.component.css"],
 })
 export class RegisterComponent implements OnInit {
+  firstName;
+  lastName;
+  email;
+  confirmEmail;
+  password;
+  confirmPassword;
+  userName;
+  age;
+  address;
+  btnnext = true;
+
   constructor() {}
 
   ngOnInit(): void {}
 
-  onSubmit() {}
+  onSubmit(formValues) {
+    console.log(formValues);
+  }
+
+  onNext() {
+    this.btnnext = false;
+  }
+
+  onBack() {
+    this.btnnext = true;
+  }
 }

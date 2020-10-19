@@ -1,32 +1,117 @@
-<form (ngSubmit)="onSubmit()" #form="ngForm">
-  <div class="form-group">
-    <label for="name">Full Name</label>
-    <input
-      type="text"
-      name="name"
-      id="name"
-      class="form-control"
-      placeholder="Full Name"
-    />
+<form (ngSubmit)="onSubmit(regForm.value)" #regForm="ngForm">
+  <div [hidden]="!btnnext">
+    <div class="form-group">
+      <label for="firstName">First Name</label>
+      <input
+        [(ngModel)]="firstName"
+        type="text"
+        name="fistName"
+        id="firstName"
+        class="form-control"
+        placeholder="First Name"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="lastName">Last Name</label>
+      <input
+        [(ngModel)]="lastName"
+        type="text"
+        name="lastName"
+        id="lastName"
+        class="form-control"
+        placeholder="Last Name"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="email">E-mail</label>
+      <input
+        [(ngModel)]="email"
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="example@gmail.com"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="confirmEmail">Confirm Email</label>
+      <input
+        [(ngModel)]="confirmEmail"
+        type="email"
+        name="confirmEmail"
+        id="confirmEmail"
+        class="form-control"
+        placeholder="Confirm Email"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="age"></label>
+      <input
+        [(ngModel)]="age"
+        type="date"
+        name="age"
+        id="age"
+        class="form-control"
+        placeholder="Date of Birth"
+      />
+    </div>
   </div>
 
-  <div class="form-group">
-    <label for=""></label>
-    <input type="text" name="" id="" class="form-control" placeholder="" />
-  </div>
+  <div [hidden]="btnnext">
+    <div class="form-group">
+      <label for="address">Address</label>
+      <input
+        [(ngModel)]="address"
+        type="text"
+        name="address"
+        id="address"
+        class="form-control"
+        placeholder="address"
+      />
+    </div>
 
-  <div class="form-group">
-    <label for=""></label>
-    <input type="text" name="" id="" class="form-control" placeholder="" />
-  </div>
+    <div class="form-group">
+      <label for="userName">User Name</label>
+      <input
+        [(ngModel)]="userName"
+        type="text"
+        name="userName"
+        id="userName"
+        class="form-control"
+        placeholder="userName"
+      />
+    </div>
 
-  <div class="form-group">
-    <label for=""></label>
-    <input type="text" name="" id="" class="form-control" placeholder="" />
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input
+        [(ngModel)]="password"
+        type="password"
+        name="password"
+        id="password"
+        class="form-control"
+        placeholder="password"
+      />
+    </div>
+    <div class="form-group">
+      <label for="confirmPassword">Confirm Password</label>
+      <input
+        [(ngModel)]="confirmPassword"
+        type="password"
+        name="confirmPassword"
+        id="confirmPassword"
+        class="form-control"
+        placeholder="confirmPassword"
+      />
+    </div>
   </div>
-
-  <div class="form-group">
-    <label for=""></label>
-    <input type="text" name="" id="" class="form-control" placeholder="" />
+  <button class="btn btn-next" *ngIf="btnnext" (click)="onNext()">Next</button>
+  <div class="back-submit" *ngIf="!btnnext">
+    <button class="btn btn-back" (click)="onBack()">Back</button>
+    <button type="submit" class="btn btn-submit">Submit</button>
   </div>
 </form>
